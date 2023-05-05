@@ -1,3 +1,4 @@
 FROM openjdk:11
-ADD target/SpringBoot-0.0.1-SNAPSHOT.jar subham_addressbook.jar
-ENTRYPOINT ["java", "-jar", "/subham_addressbook.jar"]
+EXPOSE 8080
+ADD target/SpringBoot.jar SpringBoot.jar
+ENTRYPOINT ["java", "-jar", "/SpringBoot.jar"]
